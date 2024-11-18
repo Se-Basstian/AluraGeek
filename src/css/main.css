@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap");
+
+html {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+}
+
+body {
+    writing-mode: horizontal-tb;
+    inline-size: 100%;
+    block-size: auto;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    block-size: 96px;
+    background-color: #5300c8;
+    display: flex;
+    align-items: center;
+}
+
+.header__titulo {
+    color: white;
+    inline-size: fit-content;
+    margin-inline: auto;
+    block-size: 60px;
+    margin-block: 0;
+    padding-inline-start: 138px;
+    line-height: 60px;
+    font-size: 2.4rem;
+
+    /* Ajuste de los tres corazanes */
+    background-image: url("../assets/imgs/tres_corazones.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
