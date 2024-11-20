@@ -185,6 +185,11 @@ main {
     font-family: "IBM Plex Mono", monospace;
     font-size: 1.6rem;
 
+    &:focus {
+        outline: none;
+        border-color: green;
+    }
+
     &::placeholder {
         color: #03318c;
         font-family: "IBM Plex Mono", monospace;
@@ -212,4 +217,40 @@ main {
     background-color: #fff;
     border-color: #03318c;
     color: #03318c;
+}
+
+.footer {
+    block-size: 232px;
+    background-color: #5300c8;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__titulo {
+    color: white;
+    inline-size: fit-content;
+    block-size: 60px;
+    margin-block: 0;
+    padding-inline-start: 138px;
+    line-height: 60px;
+    font-size: 2.4rem;
+
+    /* Ajuste de los tres corazanes */
+    background-image: url("../assets/imgs/tres_corazones.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.footer__parrafo {
+    font-size: 1.6rem;
+    font-family: "IBM Plex Mono", monospace;
+    color: #aaa;
+    text-align: center;
+
+    &::first-line {
+        color: #fff;
+        font-weight: bold;
+    }
 }
