@@ -46,6 +46,8 @@ main {
     inline-size: 100%;
     display: flex;
     justify-content: center;
+    margin-block-start: 50px;
+    padding-block: 60px;
 }
 
 .productos {
@@ -57,11 +59,12 @@ main {
     font-size: 2.4rem;
     inline-size: fit-content;
     margin-inline: auto;
+    text-transform: uppercase;
 }
 
 .productos__cards {
     inline-size: 678px;
-    block-size: 971px;
+    block-size: 974px;
     margin-inline: auto;
     box-shadow: -3px 2px 5px gray;
     padding: 15px;
@@ -85,7 +88,7 @@ main {
 
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 196px 32px 32px;
+    grid-template-rows: 196px 28px 34px;
 }
 
 .card__img {
@@ -109,7 +112,7 @@ main {
     color: white;
     inline-size: 176px;
     margin-inline: auto;
-    margin-block: 10px;
+    /* margin-block: 10px; */
     font-size: 1.5rem;
     font-weight: normal;
     font-family: "IBM Plex Mono", monospace;
@@ -137,8 +140,76 @@ main {
     align-self: center;
 
     display: inline;
-    inline-size: 25px;
-    block-size: 25px;
+    inline-size: 30px;
+    block-size: 30px;
     color: blue;
     border-radius: 50px;
+
+    background-image: url("../assets/imgs/bote-de-basura.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #5d04d9;
+
+    border: none;
+    &:hover {
+        background-color: red;
+    }
+}
+
+.agregar {
+    inline-size: 472px;
+    block-size: 517px;
+}
+
+.agregar__titulo {
+    inline-size: 392px;
+    block-size: 52px;
+    margin-inline: auto;
+
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.agregar__input {
+    inline-size: 392px;
+    block-size: 58px;
+    margin-block-start: 45px;
+    margin-inline: 40px;
+
+    border: none;
+    border: 3px solid #03318c;
+    border-radius: 30px;
+    padding-inline-start: 10px;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.6rem;
+
+    &::placeholder {
+        color: #03318c;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 1.6rem;
+    }
+}
+
+.agregar__boton {
+    inline-size: 188px;
+    block-size: 55px;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 2rem;
+    margin-block-start: 45px;
+    margin-inline-start: 40px;
+}
+
+.agregar__boton--izquierda {
+    background-color: #03318c;
+    color: #fff;
+}
+
+.agregar__boton--derecha {
+    margin-inline-start: 13px;
+    background-color: #fff;
+    border-color: #03318c;
+    color: #03318c;
 }
