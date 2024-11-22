@@ -50,6 +50,12 @@ body {
     /* @media(width <= 510px) {
 
     } */
+    @media (width <= 366px) {
+        padding-inline: 0;
+        block-size: 80px;
+        background-position: bottom center;
+        line-height: 2;
+    }
 }
 
 main {
@@ -58,9 +64,11 @@ main {
     justify-content: center;
     margin-block-start: 50px;
     padding-block: 60px;
-    padding-inline: 15px;
+    padding-inline: 10px;
 
     @media (width <= 1209px) {
+        margin: 0;
+        padding-block: 40px;
         flex-flow: wrap;
     }
 }
@@ -79,7 +87,7 @@ main {
 }
 
 .productos__cards {
-    inline-size: 678px;
+    inline-size: 698px;
     block-size: 974px;
     margin-inline: auto;
     box-shadow: -3px 2px 5px gray;
@@ -196,9 +204,13 @@ main {
     text-align: center;
     text-transform: uppercase;
 
+    @media (width <= 510px) {
+        line-height: 52px;
+    }
     @media (width <= 476px) {
-        inline-size: 320px;
-        block-size: 45px;
+        line-height: 2;
+        inline-size: 278px;
+        block-size: 75px;
     }
 }
 
@@ -217,6 +229,10 @@ main {
     @media (width <= 476px) {
         inline-size: 320px;
         block-size: 45px;
+    }
+
+    @media (width <= 366px) {
+        inline-size: 260px;
     }
 
     &:focus {
@@ -241,6 +257,10 @@ main {
     @media (width <= 476px) {
         inline-size: 150px;
         block-size: 50px;
+    }
+
+    @media (width <= 366px) {
+        inline-size: 120px;
     }
 }
 
@@ -277,6 +297,13 @@ main {
     background-image: url("../assets/imgs/tres_corazones.png");
     background-repeat: no-repeat;
     background-position: center left;
+
+    @media (width <= 366px) {
+        padding-inline: 0;
+        block-size: 80px;
+        background-position: bottom center;
+        line-height: 2;
+    }
 }
 
 .footer__parrafo {
