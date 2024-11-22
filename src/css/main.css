@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap");
 
+* {
+    margin: 0;
+}
+
 html {
+    --tamaño-fuente: 10px;
+
     font-family: "Press Start 2P", system-ui;
-    font-size: 10px;
+    font-size: var(--tamaño-fuente);
+
+    @media (width <=510px) {
+        font-size: calc(var(--tamaño-fuente) * 0.75);
+    }
 }
 
 body {
@@ -13,10 +23,6 @@ body {
 
     margin: 0;
     padding: 0;
-}
-
-p {
-    margin: 0;
 }
 
 .header {
@@ -40,14 +46,23 @@ p {
     background-image: url("../assets/imgs/tres_corazones.png");
     background-repeat: no-repeat;
     background-position: center left;
+
+    /* @media(width <= 510px) {
+
+    } */
 }
 
 main {
-    inline-size: 100%;
+    inline-size: calc(100% - 30px);
     display: flex;
     justify-content: center;
     margin-block-start: 50px;
     padding-block: 60px;
+    padding-inline: 15px;
+
+    @media (width <= 1209px) {
+        flex-flow: wrap;
+    }
 }
 
 .productos {
@@ -59,6 +74,7 @@ main {
     font-size: 2.4rem;
     inline-size: fit-content;
     margin-inline: auto;
+    margin-block-end: 30px;
     text-transform: uppercase;
 }
 
@@ -76,6 +92,10 @@ main {
     align-content: flex-start;
 
     overflow-y: scroll;
+
+    @media (width < 725px) {
+        inline-size: 95%;
+    }
 }
 
 .card {
@@ -108,6 +128,7 @@ main {
 .card__nombre {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
+    align-self: center;
 
     color: white;
     inline-size: 176px;
@@ -159,23 +180,31 @@ main {
 .agregar {
     inline-size: 472px;
     block-size: 517px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 40px;
+    column-gap: 30px;
 }
 
 .agregar__titulo {
     inline-size: 392px;
     block-size: 52px;
-    margin-inline: auto;
 
     font-size: 2.4rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media (width <= 476px) {
+        inline-size: 320px;
+        block-size: 45px;
+    }
 }
 
 .agregar__input {
     inline-size: 392px;
     block-size: 58px;
-    margin-block-start: 45px;
-    margin-inline: 40px;
 
     border: none;
     border: 3px solid #03318c;
@@ -184,6 +213,11 @@ main {
 
     font-family: "IBM Plex Mono", monospace;
     font-size: 1.6rem;
+
+    @media (width <= 476px) {
+        inline-size: 320px;
+        block-size: 45px;
+    }
 
     &:focus {
         outline: none;
@@ -203,8 +237,11 @@ main {
     border-radius: 15px;
     font-family: "IBM Plex Mono", monospace;
     font-size: 2rem;
-    margin-block-start: 45px;
-    margin-inline-start: 40px;
+
+    @media (width <= 476px) {
+        inline-size: 150px;
+        block-size: 50px;
+    }
 }
 
 .agregar__boton--izquierda {
@@ -213,7 +250,6 @@ main {
 }
 
 .agregar__boton--derecha {
-    margin-inline-start: 13px;
     background-color: #fff;
     border-color: #03318c;
     color: #03318c;
