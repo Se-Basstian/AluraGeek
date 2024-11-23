@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "nombre": "Laptop",
+      "precio": "2333",
+      "imagen": "https://media.istockphoto.com/id/479520746/es/foto/ordenador-port%C3%A1til-con-pantalla-en-blanco-en-blanco.jpg?s=612x612&w=0&k=20&c=n5SDdluMvzRdvAGX3iZHnlU_MPj4yyDyyi_kgsjgocY=",
+      "id": 2
+    },
+    {
+      "nombre": "Celular",
+      "precio": "900",
+      "imagen": "https://clubdebeneficios.com.bo/cdn/shop/files/celular-samsung-galaxy-a05s--292398--3020240831T162120663.jpg?v=1725395625",
+      "id": 4
+    },
+    {
+      "nombre": "Televisor",
+      "precio": "899",
+      "imagen": "https://images.philips.com/is/image/philipsconsumer/f444ccb42c39485d9324afe20133efae?$pnglarge$&wid=960",
+      "id": 5
+    },
+    {
+      "nombre": "Moticicleta",
+      "precio": "3000",
+      "imagen": "https://yansumimotor.com.pe/wp-content/uploads/2023/03/motocicleta-mapache-250-de-yansumi-color-azul.jpg",
+      "id": 6
+    },
+    {
+      "nombre": "Patineta",
+      "precio": "30",
+      "imagen": "https://m.media-amazon.com/images/I/61TrKGNnXGL._AC_UF1000,1000_QL80_.jpg",
+      "id": 7
+    },
+    {
+      "nombre": "Bicicleta",
+      "precio": "410",
+      "imagen": "https://www.jafibike.com.pe/wp-content/uploads/SAVA-200-calado.png",
+      "id": 8
+    },
+    {
+      "nombre": "Lavadora",
+      "precio": "700",
+      "imagen": "https://www.aquamaxx.pe/wp-content/uploads/2024/03/lavadora-10-1.jpg",
+      "id": 9
+    }
+  ]
+}

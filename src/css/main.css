@@ -76,6 +76,10 @@ main {
 .productos {
     inline-size: 758px;
     block-size: 1115px;
+
+    @media (width <= 360px) {
+        order: 5;
+    }
 }
 
 .productos__titulo {
@@ -125,7 +129,7 @@ main {
 
     inline-size: 176px;
     block-size: 174px;
-    background-color: white;
+    /* background-color: white; */
     margin-inline: auto;
     margin-block-start: 10px;
 
@@ -189,16 +193,15 @@ main {
     inline-size: 472px;
     block-size: 517px;
     display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: flex-start;
+    flex-flow: column;
+    align-items: center;
     row-gap: 40px;
-    column-gap: 30px;
 }
 
 .agregar__titulo {
     inline-size: 392px;
     block-size: 52px;
+    text-align: center;
 
     font-size: 2.4rem;
     text-align: center;
@@ -212,6 +215,17 @@ main {
         inline-size: 278px;
         block-size: 75px;
     }
+}
+
+.agregar__form {
+    inline-size: 100%;
+    block-size: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 40px;
+    column-gap: 30px;
 }
 
 .agregar__input {

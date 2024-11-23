@@ -14,127 +14,54 @@
             <section class="productos">
                 <h2 class="productos__titulo">Mis Productos:</h2>
                 <article class="productos__cards">
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
+                    <!-- <div class="card">
+                        <img
+                            class="card__img"
+                            src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/mx/mkt/plp/new/desktops-new/matestation-x-series/matestation-x-series-1.jpg"
+                            alt="computadora"
+                        />
+                         <div class="card__img"></div>
                         <p class="card__nombre">Nombre articulo</p>
                         <p class="card__precio">$ 60,00</p>
                         <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
-
-                    <div class="card">
-                        <!-- <img src="" alt="" /> -->
-                        <div class="card__img"></div>
-                        <p class="card__nombre">Nombre articulo</p>
-                        <p class="card__precio">$ 60,00</p>
-                        <button class="card__boton-eliminar"></button>
-                    </div>
+                    </div> -->
                 </article>
             </section>
             <section class="agregar">
                 <h2 class="agregar__titulo">Agregar Producto:</h2>
-                <input
-                    class="agregar__input"
-                    type="text"
-                    placeholder="Nombre..."
-                />
-                <input
-                    class="agregar__input"
-                    type="text"
-                    placeholder="Precio..."
-                />
-                <input
-                    class="agregar__input"
-                    type="text"
-                    placeholder="Imagen..."
-                />
+                <form class="agregar__form">
+                    <input
+                        class="agregar__input"
+                        id="nombre"
+                        type="text"
+                        placeholder="Nombre..."
+                        required
+                    />
+                    <input
+                        class="agregar__input"
+                        id="precio"
+                        type="text"
+                        placeholder="Precio..."
+                        required
+                    />
+                    <input
+                        class="agregar__input"
+                        id="imagen"
+                        type="text"
+                        placeholder="Imagen..."
+                        required
+                    />
 
-                <button class="agregar__boton agregar__boton--izquierda">
-                    Enviar
-                </button>
-                <button class="agregar__boton agregar__boton--derecha">
-                    Limpiar
-                </button>
+                    <button
+                        class="agregar__boton agregar__boton--izquierda"
+                        type="submit"
+                    >
+                        Enviar
+                    </button>
+                    <button class="agregar__boton agregar__boton--derecha">
+                        Limpiar
+                    </button>
+                </form>
             </section>
         </main>
         <footer class="footer">
@@ -144,5 +71,6 @@
                 Alura Latan - 2024
             </p>
         </footer>
+        <script type="module" src="./src/ts/main.ts"></script>
     </body>
 </html>
